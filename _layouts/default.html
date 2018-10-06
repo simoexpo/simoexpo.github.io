@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    {% seo %}
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="{{ site.url }}/assets/css/main.css">
+    <script type="text/javascript" src="{{ '/js/materialize.min.js' | prepend: site.baseurl }}"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+
+  <body class="grey darken-3 amber-text text-lighten-5">
+
+    <header>
+      {% include sidebar.html %}
+    </header>
+
+    <main>
+      <div class="container">
+
+        <section>
+          <div>
+            <h1 class="title">{{ site.title | default: site.github.repository_name }}</h1>
+            <p class="description">{{ site.description | default: site.github.project_tagline }}</p>
+          </div>
+          <hr>
+          <div>
+            <span class="credits left">Written and maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></span>
+            <span class="credits right">Hosted on GitHub Pages &mdash; Inspired by <a href="https://twitter.com/michigangraham">mattgraham</a>'s Midnight theme</span>
+          </div>
+          <br/>
+        </section>
+
+        <section>
+
+          {{ content }}
+
+        </section>
+
+      </div> 
+    </main>
+    <footer>
+      {% include footer.html %}
+    </footer>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        var collapsibleElem = document.querySelector('.collapsible');
+        var collapsibleInstance = M.Collapsible.init(collapsibleElem);
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.collapsible');
+        var instances = M.Collapsible.init(elems);
+      });
+    </script>
+  </body>
+</html>
+
