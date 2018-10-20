@@ -3,6 +3,10 @@ layout: default
 title: Home
 ---
 
+# Disclaimer
+
+This is not intended to be a proper blog or a place where you can find high technical post or guide about software development best practices. Please think of it more like a diary of my journey into programming, or better like a space for some random thoughts that come to my mind during this journey. I hope you can find something useful or at least enjoy the reading at least as much as I enjoyed writing.
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).

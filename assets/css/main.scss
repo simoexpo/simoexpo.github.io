@@ -37,8 +37,17 @@ body {
   font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+section ul {
+  list-style-type: initial ! important;
+  padding-left: 40px ! important;
+
+  li {
+    list-style-type: initial ! important;
+  }
+}
+
 .sidenav li.active {
-    background-color: #ffc107;
+  background-color: #ffc107;
 }
 
 .title {
@@ -79,19 +88,39 @@ body {
   display: block;
 }
 
+/*
+ * header setting
+ */
+
+
 h1 {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   font-weight: normal;
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: normal;
 }
 
 h3 {
   font-size: 1.5rem;
   font-weight: normal;
+}
+
+h4 {
+  font-size: 2.2rem;
+  font-weight: lighter;
+}
+
+h5 {
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+
+h6 {
+  font-size: 1.5rem;
+  font-weight: lighter;
 }
 
 section img {
@@ -104,6 +133,19 @@ blockquote {
   padding:0 0 0 20px;
   font-style:italic;
 }
+
+.small-separator {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.small-separator::after {
+  content: "\2022\0020\2022\0020\2022";
+}
+
+/*
+ * code css setting
+ */
 
 code {
   font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, monospace;
