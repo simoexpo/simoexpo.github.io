@@ -30,12 +30,8 @@ footer {
 }
 
 /*
- * general font setting
+ * unordered list fix
  */
-
-body {
-  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
 
 section ul {
   list-style-type: initial ! important;
@@ -44,6 +40,23 @@ section ul {
   li {
     list-style-type: initial ! important;
   }
+}
+
+.post ul {
+  list-style-type: none ! important;
+  padding-left: 0px ! important;
+
+  li {
+    list-style-type: none ! important;
+  }
+}
+
+/*
+ * general font setting
+ */
+
+body {
+  font-family: 'OpenSansLight', "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .sidenav li.active {
