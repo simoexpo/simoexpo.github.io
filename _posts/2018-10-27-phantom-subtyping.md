@@ -181,4 +181,4 @@ The above example demonstrate how we can exploit *phantom types* to enanche comp
 - phantom types syntax could be a bit unclear at the beginning
 - use `copy()` on a case class instance with phantom type could break all the mechanism (you can redefine it properly to avoid this)
 - need to specify the phantom type on every occurrency of the class type
-- phantom types will be removed in dotty, however the same behavior could be achieved using the [erased terms](http://dotty.epfl.ch/docs/reference/erased-terms.html)
+- phantom types will be removed in dotty, however the same behavior could be achieved using [erased terms](http://dotty.epfl.ch/docs/reference/erased-terms.html)
