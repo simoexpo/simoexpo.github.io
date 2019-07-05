@@ -1,18 +1,20 @@
 # Site
-title:              'simoexpo.github.io'
+title:              'simoexpo.dev'
 description:        'Just some random thoughts :D'
 locale:             'en_US'
 version:            '0.1'
 
 # Author
-author:             'Simone Esposito'
-role:               'Software developer'
-company:            'Bitrock'
-github:             
-  owner_url:        'https://github.com/simoexpo'
-  owner_name:       'simoexpo'
-linkedin:           'https://www.linkedin.com/in/simoneesposito90/'
-twitter:            'https://twitter.com/simoexpo90'
+author:             
+  name:             'Simone Esposito'
+  role:             'Software developer'
+  company:          'Bitrock'
+  cv:               ''   
+  github:             
+    url:            'https://github.com/simoexpo'
+    name:           'simoexpo'
+  linkedin:         'https://www.linkedin.com/in/simoneesposito90/'
+  twitter:          'https://twitter.com/simoexpo90'
 
 # Jekyll
 sass:

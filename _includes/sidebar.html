@@ -8,24 +8,24 @@
   <div>
     <div class="background">
       <img class="responsive-img" src="{{ '/assets/images/milano-skyline.jpg' | prepend: site.url }}">
-    </div>    
+    </div>
   </div>
   <div>
-    <span class="name">{{ site.author }}</span>
-    <span class="role">{{ site.role }} @ {{ site.company }}</span>
+    <span class="name">{{ site.author.name }}</span>
+    <span class="role">{{ site.author.role }} @ {{ site.author.company }}</span>
   </div>
   <div class="social">
-    <a class="btn-floating btn-small waves-effect waves-light transparent" href="{{ site.github.owner_url }}" target="_blank">
+    <a class="btn-floating btn-small waves-effect waves-light transparent" href="{{ site.author.github.url }}" target="_blank">
       <div>
         <img class="responsive-img" src="{{ '/assets/images/github_logo.png' | prepend: site.url }}">
       </div>
     </a>
-    <a class="btn-floating btn-small waves-effect waves-light transparent" href="{{ site.linkedin }}" target="_blank">
+    <a class="btn-floating btn-small waves-effect waves-light transparent" href="{{ site.author.linkedin }}" target="_blank">
       <div>
         <img class="responsive-img" src="{{ '/assets/images/linkedin_logo.png' | prepend: site.url }}">
       </div>
     </a>
-    <a class="btn-floating btn-small waves-effect waves-light transparent" href="{{ site.twitter }}" target="_blank">
+    <a class="btn-floating btn-small waves-effect waves-light transparent" href="{{ site.author.twitter }}" target="_blank">
       <div>
         <img class="responsive-img" src="{{ '/assets/images/twitter_logo.png' | prepend: site.url }}">
       </div>
@@ -33,6 +33,7 @@
   </div>
   <li><div class="divider grey darken-3"></div></li>
   <li class="{% if page.url == '/' %}active{% endif %}"><a class="waves-effect waves-yellow amber-text text-lighten-5" href="{{ site.url }}">Home</a></li>
+  <li><a class="waves-effect waves-yellow amber-text text-lighten-5" href="{{ '/assets/pdf/simone_esposito_cv.pdf' | prepend: site.url }}" target="_blank">CV</a></li>
   <li>
     <ul class="collapsible collapsible-accordion">
       <li>
